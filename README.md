@@ -33,3 +33,17 @@ Enter a Line to append data: apparao
 hieeellell
 heeloo
 apparao
+
+filename=input("enter file name with extention")
+with open(filename) as f:
+    text=f.read()
+    letter=input("enter a letter to know the frequency")
+    count=0
+    for char in text:
+        if char==letter:
+            count+=1
+    print(f"{filename} contains {count} {letter}'s in the entire data")
+    OUTPUT:
+    enter file name with extention line.txt
+enter a letter to know the frequency e
+line.txt contains 6 e's in the entire data
